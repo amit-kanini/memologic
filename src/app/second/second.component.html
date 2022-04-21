@@ -1,0 +1,42 @@
+<!-- <p>second works!</p> -->
+<!-- <div class="memologic1">
+  <h3>{{question}}</h3>
+  <form [formGroup]="form" (ngSubmit)="submit()">
+  
+      <label *ngFor="let order of orders;let idx = index">
+        <br/>
+        <br/>
+        <input formControlName="orders" type="radio" name="orders" [value]="order" ng-checked='(idx === 1)'/>
+        
+        {{order}}
+      </label>
+    
+      <br>
+      <br/>
+      <button class="button">Next</button>
+
+  </form>
+  <br/>
+   <button  [disabled]="!flag" class="button" (click)="downloadMemo()">Dowload</button>  -->
+<!-- </div> -->
+
+<div class="memologic1">
+  <h3>{{question}}</h3>
+  <form [formGroup]="form" (ngSubmit)="submit()">
+  
+      <label *ngFor="let order of orders;let idx = index">
+        <br/>
+        <br/>
+        <input  formControlName="orders" type="radio" name="orders" [value]="order" [checked]="true"/>
+      {{order}}
+      </label>
+    
+      <br>
+      <br/>
+      <button class="button">Save&Continue </button>
+
+  </form>
+  <br/>
+  <div *ngIf="disable"><button    class="button" (click)="Previous()">Previous</button> </div>
+
+</div>

@@ -1,0 +1,38 @@
+<!-- <p>first works!</p> -->
+
+<div class="memologic1">
+  
+  <div >  
+    <h3 style="text-align: center;"> Create Memo</h3>  
+          
+    <form [formGroup]="form" (ngSubmit)="submit()">  
+             
+        <div class="form-group" class="dropdown">  
+            <label for="website">Accounting Standard:</label>   &nbsp;
+            <select  formControlName="website" >  
+                <option disabled>Select Accounting & Standards:</option>  
+                
+                <option *ngFor="let web of websiteList">{{web}}</option>  
+            </select>  
+            <br/>
+            <br/>
+            <label for="website1">Select Industry Type:</label>  &nbsp;&nbsp;&nbsp;
+            <select formControlName="website1" >  
+                <option disabled>Select Website</option>  
+                  
+                <option *ngFor="let web of websiteList1">{{web}}</option>  
+            </select>  
+            
+            <!-- <div *ngIf="f.website.touched && f.website.invalid" class="alert alert-danger">  
+                <div *ngIf="f.website.errors.required">Name is required.</div>  
+            </div>   -->
+        </div>  
+        <br/><br/>
+        <button  class="button" type="submit" [disabled]="!form.valid">Save&Continue</button>  
+    </form>  
+<!-- </div> 
+
+    <button type="submit" (click)="getQuestions_1()" >Next
+
+    </button>
+</div> -->
