@@ -11,6 +11,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ThirdComponent } from './third/third.component';
 import { PurposeComponent } from './purpose/purpose.component';
 import { BackgroundComponent } from './background/background.component';
+import { TestComponent } from './test/test.component';
+import { TrimPipe } from './trim.pipe';
 // import {  MatSelectModule,  } from '@angular/material';
 
 @NgModule({
@@ -20,7 +22,9 @@ import { BackgroundComponent } from './background/background.component';
     SecondComponent,
     ThirdComponent,
     PurposeComponent,
-    BackgroundComponent
+    BackgroundComponent,
+    TestComponent,
+    TrimPipe
   ],
   imports: [
     BrowserModule,

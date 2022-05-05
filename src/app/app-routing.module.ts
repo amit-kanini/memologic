@@ -4,11 +4,12 @@ import { BackgroundComponent } from './background/background.component';
 import { FirstComponent } from './first/first.component';
 import { PurposeComponent } from './purpose/purpose.component';
 import { SecondComponent } from './second/second.component';
+import { TestComponent } from './test/test.component';
 import { ThirdComponent } from './third/third.component';
 
 const routes: Routes = [
   {path:'', component : FirstComponent},
-  {path:'memo', component : SecondComponent},
+  {path:'memo', component : TestComponent},
   {path:'download', component : ThirdComponent},
   {path:'purpose', component : PurposeComponent},
   {path:'background', component : BackgroundComponent},

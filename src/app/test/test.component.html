@@ -21,23 +21,25 @@
 <!-- </div> -->
 
 <div class="memologic1">
-  <h3>{{question}}</h3>
-  <form [formGroup]="form" (ngSubmit)="submit()">
-  
-      <label *ngFor="let order of orders;let idx = index">
+    <h3>{{question}}</h3>
+    <form [formGroup]="form" (ngSubmit)="submit()">
+    
+        <label *ngFor="let order of dataFinal;let idx = index">
         <br/>
         <br/>
         <input  formControlName="orders" type="radio" name="orders" [value]="order" [checked]="true"/>
-       
-      {{order}}
-      </label>
-    
-      <br>
-      <br/>
-      <button class="button">Save&Continue </button>
-
-  </form>
-  <br/>
-  <div *ngIf="disable"><button    class="button" (click)="Previous()">Previous</button> </div>
-
-</div>
+       <label class="score">{{order[1]}}</label> 
+        <label class="tooltip"><span class="tooltiptext">This is Applicable for Different Accounting Standards</span><img class="img" src="../../assets/information.png"/></label>
+        <br/>
+        {{order[0] | trim}}
+        </label>
+      
+        <br>
+        <br/>
+        <button class="button">Save&Continue </button>
+  
+    </form>
+    <br/>
+    <div *ngIf="disable"><button    class="button" (click)="Previous()">Previous</button> </div>
+  
+  </div>

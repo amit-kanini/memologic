@@ -9,8 +9,8 @@ export class MemoserviceService {
 
  // private url="https://memologixapi.azurewebsites.net/api/memo/initial_node/v1/"
  // private url1="https://memologixapi.azurewebsites.net/api/memo/subs_node/v1/"
-  private url="http://localhost:8000/api/memo/initial_node/v1/";
-  private url1="http://localhost:8000/api/memo/subs_node/v1/"
+  private url="http://localhost:5000/api/memo/initial_node/v1/";
+  private url1="http://localhost:5000/api/memo/subs_node/v1/"
   
   constructor(private http: HttpClient) { }
 
