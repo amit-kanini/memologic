@@ -63,3 +63,7 @@
         visibility: visible;
         border: 2px solid white;
     }
+
+    .text{
+        margin-left: 20px;
+    }
