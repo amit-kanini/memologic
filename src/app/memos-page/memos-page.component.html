@@ -1,0 +1,75 @@
+<!-- <div class="memo">
+    <div>
+        <div class="box-opener" (click)="memo1()">
+            Memo1
+        </div>
+        
+        <div class="box" [class.opened]="show">
+            <div class="content" >
+                
+            </div>
+        </div>
+    </div>
+  
+   
+    <div>
+        <div class="box-opener" (click)="memo2()">
+            Memo2
+         </div>
+         
+         <div class="box" [class.opened]="show1">
+             <div class="content">
+                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Neque ornare aenean euismod elementum nisi quis eleifend. Vivamus at augue eget arcu dictum. Dui sapien eget mi proin sed libero enim sed faucibus. Justo laoreet sit amet cursus sit amet dictum sit. Varius sit amet mattis vulputate. Lorem ipsum dolor sit amet consectetur adipiscing elit. Convallis tellus id interdum velit laoreet id donec ultrices. Tempus urna et pharetra pharetra massa massa. Tempor commodo ullamcorper a lacus vestibulum sed arcu non odio. Sagittis eu volutpat odio facilisis mauris sit amet massa vitae. Semper auctor neque vitae tempus quam pellentesque nec nam. Mauris nunc congue nisi vitae suscipit tellus mauris. Eget magna fermentum iaculis eu. Mi in nulla posuere sollicitudin. Nibh mauris cursus mattis molestie a iaculis at erat pellentesque. Nam libero justo laoreet sit amet. Aliquam faucibus purus in massa. Velit ut tortor pretium viverra suspendisse potenti nullam ac.
+             </div>
+         </div>
+    </div>
+ 
+    <div>
+        <div class="box-opener" (click)="memo3()">
+            Memo3
+         </div>
+         
+         <div class="box" [class.opened]="show2">
+             <div class="content">
+                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Neque ornare aenean euismod elementum nisi quis eleifend. Vivamus at augue eget arcu dictum. Dui sapien eget mi proin sed libero enim sed faucibus. Justo laoreet sit amet cursus sit amet dictum sit. Varius sit amet mattis vulputate. Lorem ipsum dolor sit amet consectetur adipiscing elit. Convallis tellus id interdum velit laoreet id donec ultrices. Tempus urna et pharetra pharetra massa massa. Tempor commodo ullamcorper a lacus vestibulum sed arcu non odio. Sagittis eu volutpat odio facilisis mauris sit amet massa vitae. Semper auctor neque vitae tempus quam pellentesque nec nam. Mauris nunc congue nisi vitae suscipit tellus mauris. Eget magna fermentum iaculis eu. Mi in nulla posuere sollicitudin. Nibh mauris cursus mattis molestie a iaculis at erat pellentesque. Nam libero justo laoreet sit amet. Aliquam faucibus purus in massa. Velit ut tortor pretium viverra suspendisse potenti nullam ac.
+             </div>
+         </div>
+    </div>
+   
+</div> -->
+<h2 style="text-align:center">Analysis</h2>
+<div class="newbox">
+    <h3>Memo1</h3>
+    <div *ngFor="let data1 of memo_1">
+    
+       <label>Q) {{data1[0]}}</label> 
+        <br/>
+        <label class="newpadding">- {{data1[1]}}</label> 
+        <br/>
+        <br/>
+    </div> 
+    <button  class="button" (click)="downloadMemo1()">Dowload</button>
+    <h3>Memo2</h3>
+    <div *ngFor="let data2 of memo_2">
+    
+       <label>Q) {{data2[0]}}</label> 
+        <br/>
+        <label class="newpadding">-{{data2[1]}}</label> 
+        <br/>
+        <br/>
+    </div> 
+    <button  class="button" (click)="downloadMemo2()">Dowload</button>
+    <h3>Memo3</h3>
+    <div *ngFor="let data3 of memo_3">
+    
+       <label>Q) {{data3[0]}}</label> 
+        <br/>
+        <label class="newpadding"> -{{data3[1]}}</label> 
+        <br/>
+        <br/>
+    </div>
+    
+    <button  class="button" (click)="downloadMemo3()">Dowload</button>
+     
+    
+</div>

@@ -13,6 +13,8 @@ import { PurposeComponent } from './purpose/purpose.component';
 import { BackgroundComponent } from './background/background.component';
 import { TestComponent } from './test/test.component';
 import { TrimPipe } from './trim.pipe';
+import { NewApproachComponent } from './new-approach/new-approach.component';
+import { MemosPageComponent } from './memos-page/memos-page.component';
 // import {  MatSelectModule,  } from '@angular/material';
 
 @NgModule({
@@ -24,7 +26,9 @@ import { TrimPipe } from './trim.pipe';
     PurposeComponent,
     BackgroundComponent,
     TestComponent,
-    TrimPipe
+    TrimPipe,
+    NewApproachComponent,
+    MemosPageComponent
   ],
   imports: [
     BrowserModule,

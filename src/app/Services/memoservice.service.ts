@@ -2,6 +2,8 @@ import { Injectable } from '@angular/core';
 import { HttpClient, HttpErrorResponse, HttpHeaders } from "@angular/common/http"; 
 import { IMemo } from '../Models/IMemo';
 import { Observable } from 'rxjs/internal/Observable';
+import { IStandards } from '../Models/IStandarda';
+import { IData } from '../Models/new_data';
 @Injectable({
   providedIn: 'root'
 })
@@ -11,6 +13,8 @@ export class MemoserviceService {
  // private url1="https://memologixapi.azurewebsites.net/api/memo/subs_node/v1/"
   private url="http://localhost:5000/api/memo/initial_node/v1/";
   private url1="http://localhost:5000/api/memo/subs_node/v1/"
+
+  private newUrl="http://localhost:8000/api/"
   
   constructor(private http: HttpClient) { }
 
@@ -32,4 +36,17 @@ getMore(question:any,id:number): Observable<IMemo> {
           'Access-Control-Allow-Method':'*' })
   })            
 }
+
+NewAppraochAPi(ord:string):Observable<IData>
+{
+  //console.log(this.newUrl+ord ,"newurl")
+  return this.http.get<IData>(this.newUrl+ord,
+    { headers:new HttpHeaders({
+         'Content-Type':'application/json;charset=UTF-8',
+          'Access-Control-Allow-Origin':'*', 
+          'Access-Control-Allow-Method':'*' })
+  }) 
+
+}
+
 }
