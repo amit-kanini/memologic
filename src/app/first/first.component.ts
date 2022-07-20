@@ -12,7 +12,7 @@ import { MemoserviceService } from '../Services/memoservice.service';
 export class FirstComponent implements OnInit {
 
   constructor(private router: Router,private obj: MemoserviceService) { }
-  websiteList: any = ["rBugRetest1","retest123_1","test1"]
+  websiteList: any = ["accountingstandard1","accountingstandard2","accountingstandard3"]
   websiteList1: any = ["Consumer","Energy", "Resources and Industrial","Financial Services","Life Sciences and Health" ,"Care", "TMT","Others","Unknown"]
   memoType:string='';
   industryType:string='';

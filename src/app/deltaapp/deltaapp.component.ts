@@ -7,11 +7,11 @@ import { IData } from '../Models/new_data';
 import { MemoserviceService } from '../Services/memoservice.service';
 
 @Component({
-  selector: 'app-new-approach',
-  templateUrl: './new-approach.component.html',
-  styleUrls: ['./new-approach.component.css']
+  selector: 'app-deltaapp',
+  templateUrl: './deltaapp.component.html',
+  styleUrls: ['./deltaapp.component.css']
 })
-export class NewApproachComponent implements OnInit {
+export class DeltaappComponent implements OnInit {
   constructor(private router: Router,private obj: MemoserviceService) { }
   websiteList: any = ["accountingstandard1","accountingstandard2","accountingstandard3"]
   
@@ -68,7 +68,7 @@ export class NewApproachComponent implements OnInit {
     // if(memoType=="accountingstandard3"){
     //   parameter="secondapproch3/v2/thirdaccounting/3"
     // }
-    this.obj.NewAppraochAPi(memoType).subscribe(data=>
+    this.obj.NewAppraochAPi1(memoType).subscribe(data=>
       {
         this.memo=data;
         console.log(this.memo,"data");

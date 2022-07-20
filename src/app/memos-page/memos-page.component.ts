@@ -60,7 +60,7 @@ dataFinal:any=[];
   ngOnInit(): void {
     this.memo = JSON.parse(localStorage.getItem("data")|| '{}');
     //console.log(this.memo,"data onmemo page")
-    //console.log(this.memo ,"data11")
+    console.log(this.memo ,"data11")
     this.memo_1=this.Improve(this.memo.Memo1)
     this.memo_2=this.Improve(this.memo.Memo2)
     this.memo_3=this.Improve(this.memo.Memo3)

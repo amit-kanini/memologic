@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { BackgroundComponent } from './background/background.component';
+import { DeltaappComponent } from './deltaapp/deltaapp.component';
 import { FirstComponent } from './first/first.component';
 import { MemosPageComponent } from './memos-page/memos-page.component';
 import { NewApproachComponent } from './new-approach/new-approach.component';
@@ -15,8 +16,10 @@ const routes: Routes = [
   {path:'download', component : ThirdComponent},
   {path:'purpose', component : PurposeComponent},
   {path:'background', component : BackgroundComponent},
-  {path:'newapproach', component : NewApproachComponent},
+  {path:'withdelta', component : NewApproachComponent},
+  {path:'withoutdelta', component : DeltaappComponent},
   {path:'memos', component : MemosPageComponent},
+
 ];
 
 @NgModule({

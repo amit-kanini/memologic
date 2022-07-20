@@ -15,6 +15,7 @@ import { TestComponent } from './test/test.component';
 import { TrimPipe } from './trim.pipe';
 import { NewApproachComponent } from './new-approach/new-approach.component';
 import { MemosPageComponent } from './memos-page/memos-page.component';
+import { DeltaappComponent } from './deltaapp/deltaapp.component';
 // import {  MatSelectModule,  } from '@angular/material';
 
 @NgModule({
@@ -28,7 +29,8 @@ import { MemosPageComponent } from './memos-page/memos-page.component';
     TestComponent,
     TrimPipe,
     NewApproachComponent,
-    MemosPageComponent
+    MemosPageComponent,
+    DeltaappComponent
   ],
   imports: [
     BrowserModule,

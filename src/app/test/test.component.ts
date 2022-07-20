@@ -176,7 +176,7 @@ export class TestComponent implements OnInit {
       })
   }
   getNexttoPre(question:string,id :number):void{
-    this.obj.getMore(question,id).subscribe(data=>
+    this.obj.getMore(question,id,this.memoType).subscribe(data=>
       {
         this.memo=data;
         if(this.memo?.question!="END")
@@ -197,7 +197,7 @@ export class TestComponent implements OnInit {
   }
 
   getNext(question:string,id :number):void{
-    this.obj.getMore(question,id).subscribe(data=>
+    this.obj.getMore(question,id,this.memoType).subscribe(data=>
       {
         id=id-1;
         this.memo=data;
